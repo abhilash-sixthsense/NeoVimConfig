@@ -10,6 +10,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'peitalin/vim-jsx-typescript'
   Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build' }
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+  Plug 'pseewald/anyfold'
 
 call plug#end()
 "Config Section
@@ -53,3 +54,14 @@ let g:fzf_action = {
 
 set number
 set mouse=a
+
+ filetype plugin indent on " required
+ syntax on                 " required
+
+ autocmd Filetype * AnyFoldActivate               " activate for all filetypes
+ " or
+ autocmd Filetype <your-filetype> AnyFoldActivate " activate for a specific filetype
+
+ set foldlevel=0  " close all folds
+ " or
+ set foldlevel=99 " Open all folds
