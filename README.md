@@ -20,3 +20,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 https://school.geekwall.in/p/6ck7OZ1d
 
+##### Vim Cheat Sheets
+
+https://devhints.io/vim
+
+https://www.cs.cmu.edu/~15131/f17/topics/vim/vim-cheatsheet.pdf
+
