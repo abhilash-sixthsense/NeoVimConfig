@@ -23,7 +23,7 @@ colorscheme dracula
 
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
-let g:NERDTreeIgnore = []
+let g:NERDTreeIgnore = ['.git','.idea','.vscode','__pycache__','.ipynb_checkpoints']
 let g:NERDTreeStatusline = ''
 " Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
