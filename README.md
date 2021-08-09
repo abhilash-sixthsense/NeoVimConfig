@@ -10,7 +10,7 @@ NeoVim version .5+ is required. For linux ,download the binary zip/tar.gz , extr
 1. Install the Vim Plug plugin manager
 
 ``` shell
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ```
